@@ -22,7 +22,7 @@ export function AcceptanceCard({ companyName, total, deposit, finalPayment }: Ac
   const acceptHref = `mailto:hello@virellahelsinki.com?subject=${encodeURIComponent(
     `${companyName} – hyväksyn verkkosivutarjouksen`,
   )}&body=${encodeURIComponent(
-    `Hei,\n\nHyväksyn ${companyName}:lle tehdyn 690 € verkkosivutarjouksen. Aloitusmaksu on 345 € ja loppumaksu 345 € julkaistun ja testatun toimituksen jälkeen.\n\nYstävällisin terveisin,`,
+    `Hei,\n\nHyväksyn ${companyName}:lle tehdyn 690 € verkkosivutarjouksen. Aloitusmaksu 345 € laskutetaan hyväksynnän jälkeen ja loppumaksu 345 € julkaistun ja testatun toimituksen jälkeen. Tarjoukseen sisältyy yksi .fi-verkkotunnus (jos valittu nimi on saatavilla) ja 12 kk hostingia. Tämän jälkeen domain + hosting 59 €/vuosi.\n\nYstävällisin terveisin,`,
   )}`;
 
   return (
@@ -40,11 +40,11 @@ export function AcceptanceCard({ companyName, total, deposit, finalPayment }: Ac
         </label>
         <label className="check-row">
           <input type="checkbox" checked={deliveryChecked} onChange={(event) => setDeliveryChecked(event.target.checked)} />
-          <span>Hyväksyn Virellan viimeistelemään sivuehdotuksen sovitun toimitussisällön mukaisesti.</span>
+          <span>Hyväksyn Virellan viimeistelemään sivuehdotuksen sivulla kuvatun toimitussisällön mukaisesti.</span>
         </label>
         <label className="check-row">
           <input type="checkbox" checked={termsChecked} onChange={(event) => setTermsChecked(event.target.checked)} />
-          <span>Olen tutustunut tarjouksen ehtoihin ja tietosuojaan.</span>
+          <span>Hyväksyn sivulla esitetyn 690 € hinnan, 345 € + 345 € laskutuksen sekä domain- ja hosting-ehdon.</span>
         </label>
       </div>
 
@@ -63,7 +63,7 @@ export function AcceptanceCard({ companyName, total, deposit, finalPayment }: Ac
       )}
 
       <p className="microcopy">
-        Tilaus vahvistetaan kirjallisesti. Ehdot: virellahelsinki.com/terms · Tietosuoja: virellahelsinki.com/privacy
+        Tilaus vahvistetaan kirjallisesti. Aloitusmaksu laskutetaan hyväksynnän jälkeen; sivu ei käsittele verkkomaksuja.
       </p>
     </div>
   );
