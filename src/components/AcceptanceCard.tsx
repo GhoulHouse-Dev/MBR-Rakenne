@@ -29,8 +29,8 @@ export function AcceptanceCard({
       <div className="eyebrow">HYVÄKSY TOTEUTUS</div>
       <h2>Valmis viemään sivu julkaisuun?</h2>
       <p className="muted">
-        Tarkista kolme kohtaa. Varsinainen maksupalvelu kytketään tähän CTA:han
-        ennen prospektin lähettämistä.
+        Tarkista kolme kohtaa. Tässä QA-versiossa hyväksyntä on demotoiminto
+        eikä käynnistä maksua.
       </p>
 
       <div className="check-list">
@@ -69,21 +69,24 @@ export function AcceptanceCard({
           <strong>{total} €</strong>
         </div>
         <div>
-          <span>Maksettavaa nyt</span>
+          <span>Aloitusmaksu</span>
           <strong>{deposit} €</strong>
         </div>
         <div>
-          <span>Julkaisun jälkeen</span>
+          <span>Loppumaksu</span>
           <strong>{finalPayment} €</strong>
         </div>
       </div>
 
-      <button className="button button-primary button-wide" disabled={!ready}>
-        Hyväksy tarjous ja maksa {deposit} €
+      <button
+        className="button button-primary button-wide"
+        type="button"
+        disabled={!ready}
+      >
+        Hyväksy tarjous
       </button>
       <p className="microcopy">
-        DEMO: Maksupainike pysyy tarkoituksella ilman maksukytkentää, kunnes
-        Stripe/checkout-URL ja jatkuvat kulut on lukittu.
+        DEMO: Hyväksyntäpainike ei lähetä tilausta eikä käynnistä maksua.
       </p>
     </div>
   );
