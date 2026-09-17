@@ -1,0 +1,58 @@
+main {
+  overflow-x: clip;
+}
+
+.browser-frame {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .proposal-copy h1 {
+    font-size: 40px;
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+  }
+
+  .section-heading h2,
+  .offer-layout h2,
+  .approval-layout h2 {
+    font-size: 34px;
+    line-height: 1.04;
+  }
+
+  .site-hero-copy h2 {
+    font-size: 38px;
+    line-height: 1.02;
+  }
+
+  .site-section-heading h2,
+  .trust-copy h2,
+  .project-section h2 {
+    font-size: 32px;
+    line-height: 1.05;
+  }
+
+  .proposal-hero .action-row,
+  .site-hero-copy .action-row {
+    align-items: stretch;
+  }
+
+  .proposal-hero .button,
+  .solution-band .button,
+  .site-hero-copy .button,
+  .acceptance-card .button {
+    width: 100%;
+  }
+
+  .proposal-summary strong {
+    font-size: 46px;
+  }
+
+  .browser-frame {
+    border-radius: 12px;
+  }
+
+  .check-row {
+    padding: 14px;
+  }
+}
