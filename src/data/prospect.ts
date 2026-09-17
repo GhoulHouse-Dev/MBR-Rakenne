@@ -67,7 +67,8 @@ export const prospect = {
     total: 690,
     deposit: 345,
     finalPayment: 345,
-    vatLabel: "ALV 0 % nykyisen tarjouksessa ilmoitettavan myyjästatuksen mukaisesti.",
+    vatLabel: "ALV 0 %.",
+    hostingRenewal: 59,
     includes: [
       "Yhden sivun responsiivinen verkkosivusto",
       "Valmiiksi kirjoitetut ja viimeistellyt tekstit",
@@ -77,6 +78,9 @@ export const prospect = {
       "Yksi koottu korjauskierros",
       "Mobiili- ja desktop-testaus",
       "Sovitun sivun julkaisu",
+      "Yksi .fi-verkkotunnus ja 12 kk hostingia",
     ],
+    hostingTerms:
+      "690 € sisältää yhden .fi-verkkotunnuksen, jos valittu nimi on saatavilla, sekä 12 kk hostingin. Ensimmäisen 12 kuukauden jälkeen domain + hosting maksavat 59 €/vuosi ja laskutetaan vuosittain etukäteen. Jatko ei ole määräaikainen. Domain rekisteröidään asiakkaan nimiin ja voidaan siirtää pois ilman erillistä siirtomaksua, kun avoimia laskuja ei ole.",
   },
 } as const;
